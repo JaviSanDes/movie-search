@@ -1,0 +1,36 @@
+.divprincipal{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    transition: all 0.5s;
+    z-index: 51;
+    height: 100%;
+}
+.list{
+    background: linear-gradient(to bottom, transparent 0px, #0d0d0d 50px);
+    z-index: -1;
+    transform: translateY(-100px);
+}
+.degradado{
+    z-index: 500;
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    width: 10px;
+    background: linear-gradient(to right, black 0px, transparent 10px), linear-gradient(to top, #0d0d0d 1px, transparent 50px);
+
+}
+.bottomDiv{
+    background: #0d0d0d;
+    width: 100%;
+    height: 20px;
+    margin-top: 0px;
+    z-index: 500;
+    transform: translateY(-110px);
+}
+
+@media only screen and (max-width: 800px) {
+    .bottomDiv{
+        transform: translateY(-50px);
+    }
+}

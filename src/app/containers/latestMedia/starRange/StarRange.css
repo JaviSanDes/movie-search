@@ -1,0 +1,54 @@
+.divPrincipal{
+    margin: auto;
+    margin-bottom: 5px;
+    display: flex;
+}
+.divPrincipal p{
+    margin: 0;
+    padding: 0;
+    margin-left: 10px;
+}
+.svg{
+    fill: red;
+    margin-top: -3px;
+    height: 20px;
+}
+
+.svgBlancas{
+    fill: white;
+    margin-top: -3px;
+    height: 20px;
+}
+@media only screen and (max-width: 750px) {
+    .divPrincipal{
+        margin-bottom: 0;
+    }
+    .svg{
+        height: 15px; 
+    }
+    .svgBlancas{
+        height: 15px;
+    }
+}
+@media only screen and (min-width: 1600px) {
+    .divPrincipal{
+        font-size: 25px;
+    }
+    .svg{
+        height: 30px; 
+    }
+    .svgBlancas{
+        height: 30px;
+    }
+}
+@media only screen and (min-width: 2500px) {
+    .divPrincipal{
+        font-size: 30px;
+    }
+    .svg{
+        height: 35px; 
+    }
+    .svgBlancas{
+        height: 35px;
+    }
+}

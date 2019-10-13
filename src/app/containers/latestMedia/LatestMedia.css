@@ -1,0 +1,76 @@
+.backgroundImage{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    width: 70%;
+    margin-left: auto;
+    position: relative;
+    top: -19px;
+}
+.title{
+    position: absolute;
+    top: 50px;
+    left: 80px;
+    font-size: 35px;
+    color: white;
+    z-index: 1;
+}
+.description{
+    position: absolute;
+    color: white;
+    font-size: 14px;
+    top: 130px;
+    left: 80px;
+    z-index: 1;
+    width: 400px;
+}
+.gradient{
+    position: relative;
+    height: 450px;
+    width: 70%;
+    margin-left: auto;
+    background: linear-gradient(to right, #0d0d0d 1%, transparent 20%), linear-gradient(to top, #0d0d0d 2%, transparent 30%);
+}
+.principalDiv{
+    position: sticky;
+    top: 0;
+    z-index: -2;
+}
+@media only screen and (max-width: 500px) {
+    .descriptionDiv{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    .description{
+        font-size: 20px;
+        width: 800px;
+    }
+    .title{
+        font-size: 45px;
+        top: 30px;
+    }
+}
+@media only screen and (min-width: 2500px) {
+    .description{
+        font-size: 25px;
+        width: 800px;
+        top: 30%;
+    }
+    .title{
+        font-size: 55px;
+        top: 10%;
+    }
+}
+@media only screen and (min-width: 3000px) {
+    .description{
+        font-size: 38px;
+        width: 1500px;
+        top: 30%;
+    }
+    .title{
+        font-size: 70px;
+        top: 10%;
+    }
+}
