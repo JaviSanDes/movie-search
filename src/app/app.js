@@ -12,13 +12,13 @@ import { Route, withRouter, Switch } from 'react-router-dom'
 
 class App extends Component {
 
-    render(){
+    render() {
         let divPrincipal = {
             left: `${this.props.leftValue}px`
         }
         let routes = (
             <Switch>
-                
+
                 <Route path="/elementInfo/:id" render={(props) => (
                     <ElementInfo value={25} key={props.match.params.id} {...props} />)
                 } />
@@ -28,16 +28,14 @@ class App extends Component {
                 <Route path="/" exact component={Home} />
             </Switch>
         )
-        return(
-                <div>
-                    <MenuBar />
-                    <MenuLateral />
-                    <div className={classes.divPrincipal} style={divPrincipal}>
-                        {routes}
-                    </div>
+        return (
+            <div>
+                <MenuBar />
+                <MenuLateral />
+                <div className={classes.divPrincipal} style={divPrincipal}>
+                    {routes}
                 </div>
-                    
-               
+            </div>
         )
     }
 }
